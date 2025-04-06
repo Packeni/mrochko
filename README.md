@@ -1,2 +1,0 @@
-# mrochko
-MrochkoBio
