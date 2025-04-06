@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #000;
+  color: white;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Шапка */
+.header {
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.header img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.header img:hover {
+  transform: scale(1.05);
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 10px; /* нижний отступ */
+  left: 10px; /* левый отступ */
+  color: white;
+  font-size: 13px;
+}
+
+/* Профиль */
+.profile {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.profile h1 {
+  font-size: 24px;
+  margin: 10px 0 0 0;
+}
+
+.profile p {
+  font-size: 14px;
+  color: #bbb;
+  margin: 5px 0 10px 0;
+}
+
+.profile button {
+  margin-top: 10px;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: #111;
+  color: white;
+  border: 1px solid #444;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+/* Ссылки */
+.links {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 кнопки в ряд */
+  gap: 10px;
+  width: 100%;
+}
+
+.link {
+  background-color: #111;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #444;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.link:hover {
+  background-color: #222;
+}
+
+/* Адаптив — на телефонах */
+@media screen and (max-width: 480px) {
+  .profile h1 {
+    font-size: 20px;
+  }
+
+  .profile p {
+    font-size: 13px;
+  }
+
+  .text-overlay {
+    font-size: 12px;
+  }
+}
